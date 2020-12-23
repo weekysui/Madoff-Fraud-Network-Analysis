@@ -94,6 +94,7 @@ attachment networks, the rich, or in this case Madoff, continued to get richer.
 Nodefactor means the international firms are more likely to form ties than others. As the p-value of country code 3 = international firms, is smaller than 0.05, which is statistically significant. The implication of this result
 is that many of Madoff’s ties were based in Europe, which meant that much of the money that was
 lost in the fraud was based out of Europe.
+
 ````
 null_model <- ergm(madoffnet ~ edges)
 summary(null_model) 
