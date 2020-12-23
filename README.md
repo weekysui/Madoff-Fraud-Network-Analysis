@@ -7,3 +7,5 @@
 2. Location of firms, investor types, and the amount of potential exposure to the fraud (data collected from news stories, court documents and government agencies)
 ## Visualizations of the Network:
 1. Network Visualization (Domestic Firsm vs. International Firms)
+<img src='img1.PNG'>
+2. Network Analysis From 7 Continents and Unknown Location
