@@ -66,6 +66,24 @@ Capital (4 recruitments each). Additionally, the betweenness centrality analysis
 Securities was the top feeder, albeit indirectly, with 8 recruitments. Inadvertently, through growing
 the network on Madoff’s behalf these firms also increased the amount of investors who were
 financially exposed.
+````
+network.size(madoffnet)
+network.density(madoffnet)
+components(madoffnet)
+diameter(asIgraph(madoffnet))
+transitivity(asIgraph(madoffnet))
+# Centrality Analysis
+net_mat <- as.matrix(madoff)
+madnet <- network(net_mat,matrix.type='adjacency',directed = T)
+df.prom <- data.frame(
+  deg = degree(madnet, gmode='graph'),
+  cls = closeness(madnet, gmode='graph'),
+  btw = betweenness(madnet, gmode='graph'),
+  evc = evcent(madnet, gmode='graph'),
+  row.names = row.names(net_mat)
+)
+head(df.prom[order(-df.prom$deg),],n=8)
+````
 ## ERGM Model Results:
 <img src ='ERGM.PNG'>
 An ERGM model was performed to test for preferential attachment in the network and
@@ -76,3 +94,10 @@ attachment networks, the rich, or in this case Madoff, continued to get richer.
 Nodefactor means the international firms are more likely to form ties than others. As the p-value of country code 3 = international firms, is smaller than 0.05, which is statistically significant. The implication of this result
 is that many of Madoff’s ties were based in Europe, which meant that much of the money that was
 lost in the fraud was based out of Europe.
+````
+null_model <- ergm(madoffnet ~ edges)
+summary(null_model) 
+plogis(coef(null_model))
+preferential_attachment_model <- ergm(madoffnet ~ edges + gwidegree(0.1, T)  + nodefactor("country_code") )
+summary(preferential_attachment_model)
+````
