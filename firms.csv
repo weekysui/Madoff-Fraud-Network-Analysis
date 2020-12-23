@@ -1,0 +1,62 @@
+firms,city,country,potential_exp,px_class,investor_type,country_code,continent_code,investor_type,investor_code
+HSBC_Holdings,London,UK,1000000000,5,British bank,3,1,bank,1
+Genevalor_Benbassat,Geneva,Switzerland,935000000,5,Swiss bank,3,1,bank,1
+Phoenix_Holdings,Giv'atayim,Israel,15000000,2,Israeli financial services company,3,4,financial services company,2
+Thema_Fund,Dublin,Ireland,1100000000,5,Irish hedge fund,3,1,hedge funds,3
+Herald_Lux_Fund,,,,1, ,2,5,others,8
+Capital_Bank_Austria,,Austria,19300000,3,Austrian bank,3,1,bank,1
+Cohmad_securities,,USA,1000000000,5,Securties firm,1,2,others,8
+Bank_Medici,Vienna,Austria,2800000000,5,Austrian bank,3,1,bank,1
+UniCredit_SpA,Milan,Italy,100000000,3,banking and financial services,3,1,bank,1
+Pioneer_Alt_Investments,New York City,USA,280000000,4,Irish alternatives firm,1,2,others,8
+Rothschild_Cie,Paris,France,,1,multinational investment bank and financial services company,3,1,bank,1
+Access_Int_Advisors,,,1400000000,5,hedge funds,2,5,hedge funds,3
+BNP_Paribas,Paris,France,475300000,4,retail banking section and investment banking ,3,1,bank,1
+EIM_Group,,,230000000,4,European bank,2,5,bank,1
+Nipponkoa_Insurance,Tokyo,Japan,,1,Japanese insurer,3,4,insurer,4
+Mirabaud_Cie,Geneva,Switzerland,,1,international banking and financial group,3,1,bank,1
+Zeus_Partners_Ltd,São Paulo,Brazil,300000000,4, ,3,3,others,8
+Banco_Safra,New York City,USA,300000000,4,Brazilian local private bank,1,2,bank,1
+CMG,Los Angeles,USA,80000000,3,Investment management firm,1,2,Investment management firm,5
+Brighton_Co,Beverly Hills,USA,250000000,4,Investment management firm,1,2,Investment management firm,5
+Avellino_Bienes,New York City,USA,454000000,4,accounting firm,1,2,others,8
+Neu_Privat_Bank,Zürich,Switzerland,5000000,2,Swiss bank,3,1,bank,1
+Banco_Santander,Boadilla del Monte,Spain,3100000,2,Spanish brokerage,3,1,brokerage,6
+Optimal_Strategic_US,Huston,USA,2900000000,5,hedge fund,1,2,hedge funds,3
+Sumitomo_Life_Ins,Osaka,Japan,22000000,3,Japanese insurer,3,4,insurer,4
+Fukoku_Mutual_Life,Tokyo,Japan,22000000,3,Japanese insurer,3,4,insurer,4
+Fix_Asset_Mgt, ,Greek,400000000,4,hedge fund,3,1,hedge funds,3
+Fairfield_Greenwich,New York City,USA,7500000000,5,investment firm,1,2,Investment management firm,5
+Nordea_Bank_AB,Helsinki,Finland,48000000,3,Swedish Bank,3,1,bank,1
+Banque_Benedict_HentchCie,Geneva,Switzerland,56000000,3,A Swiss-based private bank,3,1,bank,1
+Genium_Advisors, ,Switzerland,28000000,3,Swiss money manager,3,1,asset manager,7
+Great_Eastern_Holdings, ,Singapore,7700000,2,Singapore insurer,3,4,insurer,4
+Prospect_Capital,New York City,USA,,1,   ,1,2,others,8
+Union_Bancaire_Privee,Geneva,Switzerland,7000000000,5,Swiss bank,3,1,bank,1
+Sterling_Equities,Great Neck,USA,,1,Investment firm ,1,2,Investment management firm,5
+Nomura_Holdings,Tokyo,Japan,35000000,3,Japanese brokerage firm,3,4,brokerage,6
+Stanford_Capital_Mgt,Huston,Texas,600000,2,international financial services firm,3,1,financial services company,2
+FIM_Advisers,London,UK,4400000000,5,investment management firm,3,1,Investment management firm,5
+M&B_Capital_Advisors, ,Spain,187900000,4,Spanish money manager,3,1,asset manager,7
+Man_Group_PLC,London,UK,360000000,4,UK hedge fund,3,1,hedge funds,3
+Notz_Stucki_Cie,Geneva,Switzerland,750000000,4,Swiss bank,3,1,bank,1
+Credicorp_Ltd,Lima,Peru,3500000,2,Peru full range of financial services.,3,3,financial services company,2
+S&P_Investment, , ,,1, ,2,5,others,8
+EFG_International_AG,Zurich,Switzerland,130000000,4,global private banking group offering private banking and asset management services,3,1,bank,1
+Maxam_Absolute_Return_Fund,Darien,USA,280000000,4,US fund of hedge funds,1,2,hedge funds,3
+Tremont_Group_Holdings,Rye,USA,190000000,4,US fund of hedge funds,1,2,hedge funds,3
+Opperheimer_Funds,New York City,USA,190000000,4,Global asset manager,1,2,asset manager,7
+Bramdean_Alternatives_Lts,London,UK,31200000,3,asset manager,3,1,asset manager,7
+Rye_Investment_Funds,Rye,USA,3100000000,5,US hedge fund,1,2,hedge funds,3
+Austin_Capital,Austin,USA,12000000,2,fund of hedge funds,1,2,hedge funds,3
+Meridian_Capital_Partners,Los Angeles,USA,32000000,3,funds of hedge funds,1,2,hedge funds,3
+Banco_Bilbao_Vizcaya_Argentaria,Bilbao,Spain,,1,Spanish multinational financial services,3,1,financial services company,2
+Kingate_Global_Fund,Hamilton,UK,2700000000,5,fund of hedge funds,3,1,hedge funds,3
+Kingate_Euro_Fund,Hamilton,UK,819100000,4,fund of hedge funds,3,1,hedge funds,3
+Ascot_Partners,New York City,USA,1800000000,5,US hedge fund,1,2,hedge funds,3
+Gabriel_Capital,New York City,USA,5000000000,5,fund of hedge funds,1,2,hedge funds,3
+Sterling_Stamos_Capital_Mgt,New York City,USA,500000000,4,NYC investment firm,1,2,Investment management firm,5
+Spring_Mountain_Capital,,,,1,NYC investment firm,1,2,Investment management firm,5
+Ariel_Capital, , ,,1, ,2,5,others,8
+Fortis_Bank_Nederland,Amsterdam,Netherlands,1350000000,5,Dutch Bank,3,1,bank,1
+Bernie_Madoff_Investment,New York City,USA,,1,investment firm,1,2,Investment management firm,5
