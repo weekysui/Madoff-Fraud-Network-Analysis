@@ -1,24 +1,65 @@
 # Madoff-Fraud-Network-Analysis
 ## Method: Implemented Social Network Analysis in R Language. Applied analysis methods below:
+````
+library(statnet)
+library(igraph)
+library(intergraph)
+library(RColorBrewer)
+library(readr)
+library(haven)
+library(UserNetR)
+library(sna)
+````
 1. 5 number summary analysis(Network Size, Density, Components, Diameter, Clustering Coefficient)
 2. ERGM model for perferential attachment analysis for this project.
 ## Dataset:
 1. UCINET: demonstrated the finance flows between financial institutions and Bernie Madoff's investment firm (a total of 61 firms)
 2. Location of firms, investor types, and the amount of potential exposure to the fraud (data collected from news stories, court documents and government agencies)
 ## Visualizations of the Network:
+````
+madoff <- read.csv('madoff.csv',row.names=1, header=TRUE, check.names=FALSE)
+firms <- read.csv("firms.csv")
+madoff <- as.matrix(madoff)
+madoffnet<- network(madoff, matrix.type ='adjacency', ignore.eval=FALSE, directed = T)
+madoffnet %v% 'px_class' <- firms$px_class
+madoffnet %v% 'country_code' <- firms$country_code
+madoffnet %v% 'continent_code' <- firms$continent_code
+madoffnet %v% 'investor_code' <- firms$investor_code
+madoffnet %v% "investor_type.1" <- firms$investor_type.1
+````
 1. Network Visualization (Domestic Firsm vs. International Firms)
 <img src='img1.PNG'> 
 <img src='legend1.PNG'>
+
+````
+op<-par(mar=c(0,0,0,0),mfrow=c(1,1))# madoffnet$layout <- layout.kamada.kawai
+plot(madoffnet, vertex.cex=madoffnet %v% 'px_class'*0.5, displaylabels=T, vertex.col = madoffnet %v% 'country_code',edge.col="grey", label.pos =1,label.cex=0.6)
+legend("bottomleft",c("DOMESTIC","UNKNOWN","INTERNATIONAL"),cex=.5,pch=19,col=c(1,2,3),title = "Country", box.col = 'red', bg="lightblue",text.font = 4)
+````
+
 2. Network Analysis From 7 Continents and Unknown Location
 <img src='img2.PNG'>
 <img src ='legend2.PNG'>
 <img src = 'visualization2.PNG'>
+
+````
+plot(madoffnet, vertex.cex=madoffnet %v% 'px_class', displaylabels=T, vertex.col = madoffnet %v% 'continent_code', edge.col="darkgrey", label.pos = 1,label.cex=0.6)
+legend("topleft",c("EUROPE","NORTH AMERICA","SOUTH AMERICA", "ASIA", "UNKNOWN", "AFRICA", "ANTARCTICA", "AUSTRALIA"),cex=.5,pch=19,col=c(1,2,3,4,5,6,7,8),title = "Continents", box.col = 'red', bg="lightyellow",text.font = 2)
+````
+
 3. Network Analysis of Investor Types
 <img src = 'img3.PNG'>
 <img src = 'legend3.PNG'>
 
+````
+plot(madoffnet, vertex.cex=1.5, displaylabels=T, vertex.col = madoffnet %v% 'investor_code', edge.col="darkgrey", label.pos = 1,label.cex=0.6)
+legend("topleft",c("bank","financial services company","hedge funds", "insurer", "Investment management firm", "brokerage", "asset manager", "others"),cex=.5,pch=19,col=c(1,2,3,4,5,6,7,8),title = "Investor types", box.col = 'red', bg="lightyellow",text.font = 2)
+par(op)
+````
+
 ## Social Network Analysis Results
 <img src ='sna_analysis.PNG'>
+
 The centrality analysis identified the 3 major feeders for the Madoff
 Investment Scheme; Fairfield Greenwich Group (6 recruitments) and Bank Medici and Gabriel
 Capital (4 recruitments each). Additionally, the betweenness centrality analysis revealed that Cohmad
